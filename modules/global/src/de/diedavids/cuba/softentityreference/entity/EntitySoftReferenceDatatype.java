@@ -17,7 +17,7 @@ public class EntitySoftReferenceDatatype implements Datatype<EntitySoftReference
 
     @Override
     public Class getJavaClass() {
-        return String.class;
+        return EntitySoftReference.class;
     }
 
     @Nonnull

@@ -2,7 +2,12 @@
 <metadata xmlns="http://schemas.haulmont.com/cuba/metadata.xsd">
 
     <datatypes>
-        <datatype id="entitySoftReference" class="de.diedavids.cuba.softentityreference.entity.EntitySoftReferenceDatatype" />
+        <datatype
+                id="entitySoftReference"
+                class="de.diedavids.cuba.softentityreference.entity.EntitySoftReferenceDatatype"
+                javaType="de.diedavids.cuba.softentityreference.EntitySoftReference"
+                sqlType="varchar(50)"
+        />
     </datatypes>
     <metadata-model root-package="de.diedavids.cuba.softentityreference" namespace="ddcsef"/>
 

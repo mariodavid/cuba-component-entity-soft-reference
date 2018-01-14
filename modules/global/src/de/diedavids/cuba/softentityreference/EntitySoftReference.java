@@ -2,7 +2,9 @@ package de.diedavids.cuba.softentityreference;
 
 import com.haulmont.chile.core.model.MetaClass;
 
-public class EntitySoftReference {
+import java.io.Serializable;
+
+public class EntitySoftReference implements Serializable{
 
 
     private Object id;

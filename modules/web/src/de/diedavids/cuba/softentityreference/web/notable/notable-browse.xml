@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="de.diedavids.cuba.softentityreference.web.notable.NotableBrowse"
+        focusComponent="notablesTable"
+        lookupComponent="notablesTable"
+        messagesPack="de.diedavids.cuba.softentityreference.web.notable">
+    <dsContext>
+        <groupDatasource id="notablesDs"
+                         class="de.diedavids.cuba.softentityreference.entity.Notable"
+                         view="_local">
+            <query>
+                <![CDATA[select e from ddcsef$Notable e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="notablesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="notablesTable"
+                datasource="notablesDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="notablesTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="text"/>
+                <column id="notable"/>
+            </columns>
+            <rows datasource="notablesDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="notablesTable.create"/>
+                <button id="editBtn"
+                        action="notablesTable.edit"/>
+                <button id="removeBtn"
+                        action="notablesTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>

@@ -9,4 +9,8 @@
             template="de/diedavids/cuba/softentityreference/web/comments/comments-browse.xml"/>
     <screen id="ddcsef$Comments.edit"
             template="de/diedavids/cuba/softentityreference/web/comments/comments-edit.xml"/>
+    <screen id="ddcsef$Notable.browse"
+            template="de/diedavids/cuba/softentityreference/web/notable/notable-browse.xml"/>
+    <screen id="ddcsef$Notable.edit"
+            template="de/diedavids/cuba/softentityreference/web/notable/notable-edit.xml"/>
 </screen-config>

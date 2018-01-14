@@ -4,5 +4,6 @@
           insertBefore="administration">
         <item screen="ddcsef$Customer.browse"/>
         <item screen="ddcsef$Comments.browse"/>
+        <item screen="ddcsef$Notable.browse"/>
     </menu>
 </menu-config>
