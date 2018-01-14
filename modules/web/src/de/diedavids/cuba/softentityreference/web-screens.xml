@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
+    <include file="de/diedavids/cuba/softentityreference/screens.xml"/>
+    <screen id="ddcsef$Customer.browse"
+            template="de/diedavids/cuba/softentityreference/web/customer/customer-browse.xml"/>
+    <screen id="ddcsef$Customer.edit"
+            template="de/diedavids/cuba/softentityreference/web/customer/customer-edit.xml"/>
+    <screen id="ddcsef$Comments.browse"
+            template="de/diedavids/cuba/softentityreference/web/comments/comments-browse.xml"/>
+    <screen id="ddcsef$Comments.edit"
+            template="de/diedavids/cuba/softentityreference/web/comments/comments-edit.xml"/>
+</screen-config>

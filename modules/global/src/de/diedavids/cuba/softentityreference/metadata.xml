@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<metadata xmlns="http://schemas.haulmont.com/cuba/metadata.xsd">
+
+    <datatypes>
+        <datatype id="entitySoftReference" class="de.diedavids.cuba.softentityreference.entity.EntitySoftReferenceDatatype" />
+    </datatypes>
+    <metadata-model root-package="de.diedavids.cuba.softentityreference" namespace="ddcsef"/>
+
+</metadata>

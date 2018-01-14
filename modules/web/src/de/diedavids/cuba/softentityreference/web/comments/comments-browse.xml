@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="de.diedavids.cuba.softentityreference.web.comments.CommentsBrowse"
+        focusComponent="commentsesTable"
+        lookupComponent="commentsesTable"
+        messagesPack="de.diedavids.cuba.softentityreference.web.comments">
+    <dsContext>
+        <groupDatasource id="commentsesDs"
+                         class="de.diedavids.cuba.softentityreference.entity.Comments"
+                         view="_local">
+            <query>
+                <![CDATA[select e from ddcsef$Comments e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="commentsesTable"
+            spacing="true">
+        <filter id="filter"
+                applyTo="commentsesTable"
+                datasource="commentsesDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="commentsesTable"
+                    width="100%">
+            <actions>
+                <action id="create"/>
+                <action id="edit"/>
+                <action id="remove"/>
+            </actions>
+            <columns>
+                <column id="text"/>
+                <column id="commentable"/>
+            </columns>
+            <rows datasource="commentsesDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn"
+                        action="commentsesTable.create"/>
+                <button id="editBtn"
+                        action="commentsesTable.edit"/>
+                <button id="removeBtn"
+                        action="commentsesTable.remove"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>
