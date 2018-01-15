@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
-        class="de.diedavids.cuba.softentityreference.web.example.comment.CommentBrowse"
-        focusComponent="commentsesTable"
-        lookupComponent="commentsesTable"
-        messagesPack="de.diedavids.cuba.softentityreference.web.example.comment">
+        class="de.diedavids.cuba.softentityreference.web.order.OrderBrowse"
+        focusComponent="ordersTable"
+        lookupComponent="ordersTable"
+        messagesPack="de.diedavids.cuba.softentityreference.web.order">
     <dsContext>
-        <groupDatasource id="commentsesDs"
-                         class="de.diedavids.cuba.softentityreference.example.Comment"
+        <groupDatasource id="ordersDs"
+                         class="de.diedavids.cuba.softentityreference.example.Order"
                          view="_local">
             <query>
-                <![CDATA[select e from ddcsef$Comment e]]>
+                <![CDATA[select e from ddcsef$Order e]]>
             </query>
         </groupDatasource>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="commentsesTable"
+    <layout expand="ordersTable"
             spacing="true">
         <filter id="filter"
-                applyTo="commentsesTable"
-                datasource="commentsesDs">
+                applyTo="ordersTable"
+                datasource="ordersDs">
             <properties include=".*"/>
         </filter>
-        <groupTable id="commentsesTable"
+        <groupTable id="ordersTable"
                     width="100%">
             <actions>
                 <action id="create"/>
@@ -31,19 +31,18 @@
                 <action id="remove"/>
             </actions>
             <columns>
-                <column id="text"/>
-                <column id="commentable"/>
+                <column id="orderDate"/>
             </columns>
-            <rows datasource="commentsesDs"/>
+            <rows datasource="ordersDs"/>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
                 <button id="createBtn"
-                        action="commentsesTable.create"/>
+                        action="ordersTable.create"/>
                 <button id="editBtn"
-                        action="commentsesTable.edit"/>
+                        action="ordersTable.edit"/>
                 <button id="removeBtn"
-                        action="commentsesTable.remove"/>
+                        action="ordersTable.remove"/>
             </buttonsPanel>
         </groupTable>
     </layout>

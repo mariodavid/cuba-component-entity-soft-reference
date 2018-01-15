@@ -1,13 +1,10 @@
 package de.diedavids.cuba.softentityreference.example;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Column;
+import javax.persistence.*;
 
 import com.haulmont.chile.core.annotations.MetaProperty;
 import com.haulmont.cuba.core.entity.StandardEntity;
-import de.diedavids.cuba.softentityreference.SoftReference;
-import de.diedavids.cuba.softentityreference.EntitySoftReferenceDatatype;
+import de.diedavids.cuba.softentityreference.EntitySoftReferenceConverter;
 
 @Table(name = "DDCSEF_COMMENT")
 @Entity(name = "ddcsef$Comment")
@@ -17,20 +14,18 @@ public class Comment extends StandardEntity {
     @Column(name = "TEXT")
     protected String text;
 
+    @Convert(converter = EntitySoftReferenceConverter.class)
     @MetaProperty(datatype = "EntitySoftReference")
-    @Column(name = "ENTITY_COMMENTABLE")
-    protected com.haulmont.cuba.core.entity.Entity entityCommentable;
-
-    @MetaProperty(datatype = "SoftReference")
     @Column(name = "COMMENTABLE")
-    protected SoftReference commentable;
+    protected com.haulmont.cuba.core.entity.Entity commentable;
 
-    public void setEntityCommentable(com.haulmont.cuba.core.entity.Entity entityCommentable) {
-        this.entityCommentable = entityCommentable;
+
+    public void setCommentable(com.haulmont.cuba.core.entity.Entity commentable) {
+        this.commentable = commentable;
     }
 
-    public com.haulmont.cuba.core.entity.Entity getEntityCommentable() {
-        return entityCommentable;
+    public com.haulmont.cuba.core.entity.Entity getCommentable() {
+        return commentable;
     }
 
 
@@ -42,13 +37,6 @@ public class Comment extends StandardEntity {
         return text;
     }
 
-    public void setCommentable(SoftReference commentable) {
-        this.commentable = commentable;
-    }
-
-    public SoftReference getCommentable() {
-        return commentable;
-    }
 
 
 }

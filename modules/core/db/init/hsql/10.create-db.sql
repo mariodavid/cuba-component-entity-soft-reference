@@ -26,9 +26,18 @@ create table DDCSEF_COMMENT (
     DELETED_BY varchar(50),
     --
     TEXT varchar(255),
-    ENTITY_COMMENTABLE varchar(255),
     COMMENTABLE varchar(255),
     --
     primary key (ID)
 )^
 -- end DDCSEF_COMMENT
+-- begin DDCSEF_ORDER
+create table DDCSEF_ORDER (
+    ID integer not null,
+    UUID varchar(36),
+    --
+    ORDER_DATE date,
+    --
+    primary key (ID)
+)^
+-- end DDCSEF_ORDER

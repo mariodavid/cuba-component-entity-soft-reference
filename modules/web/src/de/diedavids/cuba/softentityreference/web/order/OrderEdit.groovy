@@ -1,13 +1,13 @@
-package de.diedavids.cuba.softentityreference.web.example.customer
+package de.diedavids.cuba.softentityreference.web.order
 
 import com.haulmont.cuba.gui.components.AbstractEditor
 import de.diedavids.cuba.softentityreference.example.Comment
-import de.diedavids.cuba.softentityreference.example.Customer
+import de.diedavids.cuba.softentityreference.example.Order
 import de.diedavids.cuba.softentityreference.example.service.CommentsService
 
 import javax.inject.Inject
 
-class CustomerEdit extends AbstractEditor<Customer> {
+class OrderEdit extends AbstractEditor<Order> {
 
 
     @Inject

@@ -9,4 +9,8 @@
             template="/de/diedavids/cuba/softentityreference/web/example/comment/comment-browse.xml"/>
     <screen id="ddcsef$Comment.edit"
             template="/de/diedavids/cuba/softentityreference/web/example/comment/comment-edit.xml"/>
+    <screen id="ddcsef$Order.browse"
+            template="de/diedavids/cuba/softentityreference/web/order/order-browse.xml"/>
+    <screen id="ddcsef$Order.edit"
+            template="de/diedavids/cuba/softentityreference/web/order/order-edit.xml"/>
 </screen-config>

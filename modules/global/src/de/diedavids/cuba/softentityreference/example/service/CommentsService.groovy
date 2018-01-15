@@ -1,10 +1,10 @@
 package de.diedavids.cuba.softentityreference.example.service
 
 import com.haulmont.cuba.core.entity.Entity
+import de.diedavids.cuba.softentityreference.example.Comment
 
 public interface CommentsService {
-    String NAME = "DDCSEF_COMMENTService";
+    String NAME = "ddcsef_CommentService";
 
-    void createCommentWithSoftReference(String text, Entity softReference)
-    void createCommentWithEntitySoftReference(String text, Entity softReference)
+    Comment createComment(String text, Entity softReference)
 }
