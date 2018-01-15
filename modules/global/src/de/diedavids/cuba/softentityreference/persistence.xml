@@ -5,6 +5,6 @@
                       transaction-type="RESOURCE_LOCAL">
         <class>de.diedavids.cuba.softentityreference.entity.Customer</class>
         <class>de.diedavids.cuba.softentityreference.entity.Comments</class>
-        <class>de.diedavids.cuba.softentityreference.entity.Notable</class>
+        <class>de.diedavids.cuba.softentityreference.entity.Note</class>
     </persistence-unit>
 </persistence>

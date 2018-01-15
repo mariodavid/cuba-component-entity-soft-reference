@@ -4,7 +4,7 @@ import com.haulmont.chile.core.model.MetaClass;
 
 import java.io.Serializable;
 
-public class EntitySoftReference implements Serializable{
+public class SoftReference implements Serializable {
 
 
     private Object id;

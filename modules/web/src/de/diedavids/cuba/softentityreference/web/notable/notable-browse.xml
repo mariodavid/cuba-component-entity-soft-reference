@@ -7,7 +7,7 @@
         messagesPack="de.diedavids.cuba.softentityreference.web.notable">
     <dsContext>
         <groupDatasource id="notablesDs"
-                         class="de.diedavids.cuba.softentityreference.entity.Notable"
+                         class="de.diedavids.cuba.softentityreference.entity.Note"
                          view="_local">
             <query>
                 <![CDATA[select e from ddcsef$Notable e]]>

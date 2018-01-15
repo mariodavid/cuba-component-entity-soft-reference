@@ -11,7 +11,7 @@
         <property name="remoteServices">
             <map>
                 <entry key="ddcsef_SoftEntityReferenceService"
-                       value="de.diedavids.cuba.softentityreference.SoftEntityReferenceService"/>
+                       value="de.diedavids.cuba.softentityreference.EntitySoftReferenceService"/>
             </map>
         </property>
     </bean>

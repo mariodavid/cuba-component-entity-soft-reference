@@ -7,7 +7,7 @@
         messagesPack="de.diedavids.cuba.softentityreference.web.notable">
     <dsContext>
         <datasource id="notableDs"
-                    class="de.diedavids.cuba.softentityreference.entity.Notable"
+                    class="de.diedavids.cuba.softentityreference.entity.Note"
                     view="_local"/>
     </dsContext>
     <dialogMode height="600"

@@ -3,9 +3,9 @@
 
     <datatypes>
         <datatype
-                id="entitySoftReference"
-                class="de.diedavids.cuba.softentityreference.entity.EntitySoftReferenceDatatype"
-                javaType="de.diedavids.cuba.softentityreference.EntitySoftReference"
+                id="SoftReference"
+                class="de.diedavids.cuba.softentityreference.SoftReferenceDatatype"
+                javaType="de.diedavids.cuba.softentityreference.SoftReference"
                 sqlType="varchar(50)"
         />
     </datatypes>

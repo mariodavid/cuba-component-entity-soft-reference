@@ -6,7 +6,7 @@ import javax.persistence.Column;
 
 import com.haulmont.chile.core.annotations.MetaProperty;
 import com.haulmont.cuba.core.entity.StandardEntity;
-import de.diedavids.cuba.softentityreference.EntitySoftReference;
+import de.diedavids.cuba.softentityreference.SoftReference;
 
 @Table(name = "DDCSEF_COMMENTS")
 @Entity(name = "ddcsef$Comments")
@@ -16,9 +16,9 @@ public class Comments extends StandardEntity {
     @Column(name = "TEXT")
     protected String text;
 
-    @MetaProperty(datatype = "entitySoftReference")
+    @MetaProperty(datatype = "SoftReference")
     @Column(name = "COMMENTABLE")
-    protected EntitySoftReference commentable;
+    protected SoftReference commentable;
 
     public void setText(String text) {
         this.text = text;
@@ -28,11 +28,11 @@ public class Comments extends StandardEntity {
         return text;
     }
 
-    public void setCommentable(EntitySoftReference commentable) {
+    public void setCommentable(SoftReference commentable) {
         this.commentable = commentable;
     }
 
-    public EntitySoftReference getCommentable() {
+    public SoftReference getCommentable() {
         return commentable;
     }
 
