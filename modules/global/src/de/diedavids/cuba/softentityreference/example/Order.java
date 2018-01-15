@@ -9,7 +9,9 @@ import javax.persistence.TemporalType;
 import com.haulmont.cuba.core.entity.BaseIntegerIdEntity;
 import com.haulmont.cuba.core.entity.HasUuid;
 import java.util.UUID;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+//@NamePattern("%s|orderDate")
 @Table(name = "DDCSEF_ORDER")
 @Entity(name = "ddcsef$Order")
 public class Order extends BaseIntegerIdEntity implements HasUuid {

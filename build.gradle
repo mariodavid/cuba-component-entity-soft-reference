@@ -1,6 +1,6 @@
 
 buildscript {
-    ext.cubaVersion = '6.7.7'
+    ext.cubaVersion = '6.8-SNAPSHOT'
     repositories {
         
         maven {
@@ -216,7 +216,7 @@ task restart(dependsOn: ['stop', ':app-core:deploy', ':app-web:deploy'], descrip
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.4'
+    gradleVersion = '4.3.1'
 }
 
 apply from: 'extra.gradle'

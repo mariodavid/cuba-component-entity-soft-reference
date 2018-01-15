@@ -4,6 +4,7 @@ import javax.persistence.*;
 
 import com.haulmont.chile.core.annotations.MetaProperty;
 import com.haulmont.cuba.core.entity.StandardEntity;
+import com.haulmont.cuba.core.entity.annotation.SystemLevel;
 import de.diedavids.cuba.softentityreference.EntitySoftReferenceConverter;
 
 @Table(name = "DDCSEF_COMMENT")
@@ -14,6 +15,7 @@ public class Comment extends StandardEntity {
     @Column(name = "TEXT")
     protected String text;
 
+    @SystemLevel
     @Convert(converter = EntitySoftReferenceConverter.class)
     @MetaProperty(datatype = "EntitySoftReference")
     @Column(name = "COMMENTABLE")
