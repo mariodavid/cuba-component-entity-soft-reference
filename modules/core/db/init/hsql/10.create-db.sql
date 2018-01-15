@@ -14,8 +14,8 @@ create table DDCSEF_CUSTOMER (
     primary key (ID)
 )^
 -- end DDCSEF_CUSTOMER
--- begin DDCSEF_COMMENTS
-create table DDCSEF_COMMENTS (
+-- begin DDCSEF_COMMENT
+create table DDCSEF_COMMENT (
     ID varchar(36) not null,
     VERSION integer not null,
     CREATE_TS timestamp,
@@ -26,25 +26,9 @@ create table DDCSEF_COMMENTS (
     DELETED_BY varchar(50),
     --
     TEXT varchar(255),
+    ENTITY_COMMENTABLE varchar(255),
     COMMENTABLE varchar(255),
     --
     primary key (ID)
 )^
--- end DDCSEF_COMMENTS
--- begin DDCSEF_NOTABLE
-create table DDCSEF_NOTABLE (
-    ID varchar(36) not null,
-    VERSION integer not null,
-    CREATE_TS timestamp,
-    CREATED_BY varchar(50),
-    UPDATE_TS timestamp,
-    UPDATED_BY varchar(50),
-    DELETE_TS timestamp,
-    DELETED_BY varchar(50),
-    --
-    TEXT varchar(255),
-    NOTABLE varchar(50),
-    --
-    primary key (ID)
-)^
--- end DDCSEF_NOTABLE
+-- end DDCSEF_COMMENT

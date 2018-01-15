@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://editorCaption"
-        class="de.diedavids.cuba.softentityreference.web.customer.CustomerEdit"
-        datasource="customerDs"
+        class="de.diedavids.cuba.softentityreference.web.example.comment.CommentEdit"
+        datasource="commentsDs"
         focusComponent="fieldGroup"
-        messagesPack="de.diedavids.cuba.softentityreference.web.customer">
+        messagesPack="de.diedavids.cuba.softentityreference.web.example.comment">
     <dsContext>
-        <datasource id="customerDs"
-                    class="de.diedavids.cuba.softentityreference.entity.Customer"
+        <datasource id="commentsDs"
+                    class="de.diedavids.cuba.softentityreference.example.Comment"
                     view="_local"/>
     </dsContext>
     <dialogMode height="600"
@@ -15,9 +15,10 @@
     <layout expand="windowActions"
             spacing="true">
         <fieldGroup id="fieldGroup"
-                    datasource="customerDs">
+                    datasource="commentsDs">
             <column width="250px">
-                <field property="name"/>
+                <field property="text"/>
+                <field property="entityCommentable"/>
             </column>
         </fieldGroup>
         <frame id="windowActions"

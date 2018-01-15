@@ -17,5 +17,8 @@ public class EntitySoftReferenceServiceBean implements EntitySoftReferenceServic
         null
     }
 
-
+    @Override
+    SoftReference createSoftReference(Entity entity) {
+        return new SoftReference(metaClass: entity.getMetaClass(), id: entity.getId(), caption: entity.instanceName)
+    }
 }

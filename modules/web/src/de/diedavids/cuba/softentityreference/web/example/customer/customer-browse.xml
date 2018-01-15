@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
-        class="de.diedavids.cuba.softentityreference.web.notable.NotableBrowse"
-        focusComponent="notablesTable"
-        lookupComponent="notablesTable"
-        messagesPack="de.diedavids.cuba.softentityreference.web.notable">
+        class="de.diedavids.cuba.softentityreference.web.example.customer.CustomerBrowse"
+        focusComponent="customersTable"
+        lookupComponent="customersTable"
+        messagesPack="de.diedavids.cuba.softentityreference.web.example.customer">
     <dsContext>
-        <groupDatasource id="notablesDs"
-                         class="de.diedavids.cuba.softentityreference.entity.Note"
+        <groupDatasource id="customersDs"
+                         class="de.diedavids.cuba.softentityreference.example.Customer"
                          view="_local">
             <query>
-                <![CDATA[select e from ddcsef$Notable e]]>
+                <![CDATA[select e from ddcsef$Customer e]]>
             </query>
         </groupDatasource>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="notablesTable"
+    <layout expand="customersTable"
             spacing="true">
         <filter id="filter"
-                applyTo="notablesTable"
-                datasource="notablesDs">
+                applyTo="customersTable"
+                datasource="customersDs">
             <properties include=".*"/>
         </filter>
-        <groupTable id="notablesTable"
+        <groupTable id="customersTable"
                     width="100%">
             <actions>
                 <action id="create"/>
@@ -31,19 +31,18 @@
                 <action id="remove"/>
             </actions>
             <columns>
-                <column id="text"/>
-                <column id="notable"/>
+                <column id="name"/>
             </columns>
-            <rows datasource="notablesDs"/>
+            <rows datasource="customersDs"/>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
                 <button id="createBtn"
-                        action="notablesTable.create"/>
+                        action="customersTable.create"/>
                 <button id="editBtn"
-                        action="notablesTable.edit"/>
+                        action="customersTable.edit"/>
                 <button id="removeBtn"
-                        action="notablesTable.remove"/>
+                        action="customersTable.remove"/>
             </buttonsPanel>
         </groupTable>
     </layout>

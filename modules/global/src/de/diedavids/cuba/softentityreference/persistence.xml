@@ -3,8 +3,7 @@
              version="2.0">
     <persistence-unit name="cuba-component-soft-entity-reference"
                       transaction-type="RESOURCE_LOCAL">
-        <class>de.diedavids.cuba.softentityreference.entity.Customer</class>
-        <class>de.diedavids.cuba.softentityreference.entity.Comments</class>
-        <class>de.diedavids.cuba.softentityreference.entity.Note</class>
+        <class>de.diedavids.cuba.softentityreference.example.Customer</class>
+        <class>de.diedavids.cuba.softentityreference.example.Comment</class>
     </persistence-unit>
 </persistence>

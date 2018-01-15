@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
         caption="msg://browseCaption"
-        class="de.diedavids.cuba.softentityreference.web.customer.CustomerBrowse"
-        focusComponent="customersTable"
-        lookupComponent="customersTable"
-        messagesPack="de.diedavids.cuba.softentityreference.web.customer">
+        class="de.diedavids.cuba.softentityreference.web.example.comment.CommentBrowse"
+        focusComponent="commentsesTable"
+        lookupComponent="commentsesTable"
+        messagesPack="de.diedavids.cuba.softentityreference.web.example.comment">
     <dsContext>
-        <groupDatasource id="customersDs"
-                         class="de.diedavids.cuba.softentityreference.entity.Customer"
+        <groupDatasource id="commentsesDs"
+                         class="de.diedavids.cuba.softentityreference.example.Comment"
                          view="_local">
             <query>
-                <![CDATA[select e from ddcsef$Customer e]]>
+                <![CDATA[select e from ddcsef$Comment e]]>
             </query>
         </groupDatasource>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
-    <layout expand="customersTable"
+    <layout expand="commentsesTable"
             spacing="true">
         <filter id="filter"
-                applyTo="customersTable"
-                datasource="customersDs">
+                applyTo="commentsesTable"
+                datasource="commentsesDs">
             <properties include=".*"/>
         </filter>
-        <groupTable id="customersTable"
+        <groupTable id="commentsesTable"
                     width="100%">
             <actions>
                 <action id="create"/>
@@ -31,18 +31,20 @@
                 <action id="remove"/>
             </actions>
             <columns>
-                <column id="name"/>
+                <column id="text"/>
+                <column id="commentable"/>
+                <column id="entityCommentable"/>
             </columns>
-            <rows datasource="customersDs"/>
+            <rows datasource="commentsesDs"/>
             <rowsCount/>
             <buttonsPanel id="buttonsPanel"
                           alwaysVisible="true">
                 <button id="createBtn"
-                        action="customersTable.create"/>
+                        action="commentsesTable.create"/>
                 <button id="editBtn"
-                        action="customersTable.edit"/>
+                        action="commentsesTable.edit"/>
                 <button id="removeBtn"
-                        action="customersTable.remove"/>
+                        action="commentsesTable.remove"/>
             </buttonsPanel>
         </groupTable>
     </layout>

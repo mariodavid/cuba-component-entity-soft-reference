@@ -6,7 +6,13 @@
                 id="SoftReference"
                 class="de.diedavids.cuba.softentityreference.SoftReferenceDatatype"
                 javaType="de.diedavids.cuba.softentityreference.SoftReference"
-                sqlType="varchar(50)"
+                sqlType="varchar(255)"
+        />
+        <datatype
+                id="EntitySoftReference"
+                class="de.diedavids.cuba.softentityreference.EntitySoftReferenceDatatype"
+                javaType="com.haulmont.cuba.core.entity.Entity"
+                sqlType="varchar(255)"
         />
     </datatypes>
     <metadata-model root-package="de.diedavids.cuba.softentityreference" namespace="ddcsef"/>

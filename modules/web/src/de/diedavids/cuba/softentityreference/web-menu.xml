@@ -3,7 +3,6 @@
     <menu id="application-ddcsef"
           insertBefore="administration">
         <item screen="ddcsef$Customer.browse"/>
-        <item screen="ddcsef$Comments.browse"/>
-        <item screen="ddcsef$Notable.browse"/>
+        <item screen="ddcsef$Comment.browse"/>
     </menu>
 </menu-config>

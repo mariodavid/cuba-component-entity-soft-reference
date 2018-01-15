@@ -1,4 +1,4 @@
-package de.diedavids.cuba.softentityreference.entity;
+package de.diedavids.cuba.softentityreference.example;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
