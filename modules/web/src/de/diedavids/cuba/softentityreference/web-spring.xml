@@ -12,6 +12,8 @@
             <map>
                 <entry key="ddcsef_CommentService"
                        value="de.diedavids.cuba.softentityreference.example.service.CommentsService"/>
+                <entry key="ddcsef_SoftReferenceService"
+                       value="de.diedavids.cuba.softentityreference.SoftReferenceService"/>
             </map>
         </property>
     </bean>

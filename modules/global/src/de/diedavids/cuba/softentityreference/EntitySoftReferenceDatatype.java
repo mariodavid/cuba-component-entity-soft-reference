@@ -22,15 +22,7 @@ public class EntitySoftReferenceDatatype implements Datatype<Entity> {
     @Override
     public String format(@Nullable Object value) {
 
-        if (value == null)
-            return "";
-
-        EntityLoadInfoBuilder builder = getEntityLoadInfoBuilder();
-
-        EntityLoadInfo entityLoadInfo = builder.create((Entity) value);
-
-
-        return entityLoadInfo.toString();
+        return ((Entity) value).getInstanceName();
 
     }
 

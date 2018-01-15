@@ -32,7 +32,7 @@
             </actions>
             <columns>
                 <column id="text"/>
-                <column id="commentable" link="true"/>
+                <column id="commentable" link="true" sortable="false"/>
             </columns>
             <rows datasource="commentsesDs"/>
             <rowsCount/>
