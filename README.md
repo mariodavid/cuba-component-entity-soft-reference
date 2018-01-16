@@ -7,7 +7,7 @@ This application component can be used for referencing entities without a foreig
 A soft reference is a reference in the data model, which does not create a foreign key in the database as well as not creating referential integritry for it.
 Instead it is just a "weak" or "soft" reference to another entity.
 
-Example:
+#### Example: Customer - Order
 
 Let's take the Customer <>--> Order example. A customer can have mutiple orders. We model that as an composition in CUBA.
 This means, that there will be a column "customer_id" in the Order table, which stores the primary key of the customer in
@@ -22,6 +22,8 @@ there will be no foreign key association on the database. Instead the following 
 
 Correct. For pretty much every case, there is no need to use soft references. Since it misses all the cool features of
 referencial integrity, there are a lot of downsides. Why do we still need them? Here is an example:
+
+#### Example: Customer - Order - Comment
 
 Let's assume we want to have a column called "Comment". Comments can be created for a lot of different entities. There can be comments
 for customers as well as comments for orders, products etc. The common way to handle that in a programming language like Java is
