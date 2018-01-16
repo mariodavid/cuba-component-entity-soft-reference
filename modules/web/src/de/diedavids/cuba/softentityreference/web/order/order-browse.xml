@@ -29,6 +29,7 @@
                 <action id="create"/>
                 <action id="edit"/>
                 <action id="remove"/>
+                <action id="countComments" caption="Count comments" invoke="countComments"/>
             </actions>
             <columns>
                 <column id="orderDate"/>
@@ -43,6 +44,8 @@
                         action="ordersTable.edit"/>
                 <button id="removeBtn"
                         action="ordersTable.remove"/>
+                <button id="countCommentsBtn"
+                        action="ordersTable.countComments"/>
             </buttonsPanel>
         </groupTable>
     </layout>
