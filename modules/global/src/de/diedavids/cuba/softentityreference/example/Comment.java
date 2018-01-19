@@ -6,7 +6,9 @@ import com.haulmont.chile.core.annotations.MetaProperty;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.SystemLevel;
 import de.diedavids.cuba.softentityreference.EntitySoftReferenceConverter;
+import com.haulmont.chile.core.annotations.NamePattern;
 
+@NamePattern("%s|text")
 @Table(name = "DDCSEF_COMMENT")
 @Entity(name = "ddcsef$Comment")
 public class Comment extends StandardEntity {
