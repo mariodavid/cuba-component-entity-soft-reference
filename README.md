@@ -2,6 +2,9 @@
 
 This application component can be used for referencing entities without a foreign key in the database.
 
+
+
+
 ### What is a soft reference?
 
 A soft reference is a reference in the data model, which does not create a foreign key in the database as well as not creating referential integritry for it.
@@ -37,3 +40,42 @@ to totally different tables.
 For cross cutting functionality, these soft references can be the solution here.
 
 
+
+
+
+
+## Installation
+
+1. Add the following maven repository `https://dl.bintray.com/mariodavid/cuba-components` to the build.gradle of your CUBA application:
+
+
+    buildscript {
+        
+        //...
+        
+        repositories {
+        
+            // ...
+        
+            maven {
+                url  "https://dl.bintray.com/mariodavid/cuba-components"
+            }
+        }
+        
+        // ...
+    }
+
+2. Select a version of the add-on which is compatible with the platform version used in your project:
+
+| Platform Version | Add-on Version |
+| ---------------- | -------------- |
+| 6.8.x            | 0.1.x          |
+
+
+The latest version is: [ ![Download](https://api.bintray.com/packages/mariodavid/cuba-components/cuba-component-entity-soft-reference/images/download.svg) ](https://bintray.com/mariodavid/cuba-components/cuba-component-entity-soft-reference/_latestVersion)
+
+Add custom application component to your project:
+
+* Artifact group: `de.diedavids.cuba.entitysoftreference`
+* Artifact name: `entity-soft-reference-global`
+* Version: *add-on version*
