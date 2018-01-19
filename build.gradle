@@ -30,7 +30,7 @@ apply(plugin: 'cuba')
 
 cuba {
     artifact {
-        group = 'de.diedavids.cuba.softentityreference'
+        group = 'de.diedavids.cuba.entitysoftreference'
         version = '0.1'
         isSnapshot = true
     }
@@ -118,7 +118,7 @@ configure(coreModule) {
     task createDb(dependsOn: assembleDbScripts, description: 'Creates local database', type: CubaDbCreation) {
         dbms = 'hsql'
         host = 'localhost'
-        dbName = 'ddcsef'
+        dbName = 'ddcesf'
         dbUser = 'sa'
         dbPassword = ''
     }
@@ -126,7 +126,7 @@ configure(coreModule) {
     task updateDb(dependsOn: assembleDbScripts, description: 'Updates local database', type: CubaDbUpdate) {
         dbms = 'hsql'
         host = 'localhost'
-        dbName = 'ddcsef'
+        dbName = 'ddcesf'
         dbUser = 'sa'
         dbPassword = ''
     }
@@ -140,7 +140,7 @@ configure(guiModule) {
 
     task deployConf(type: Copy) {
         from file('src')
-        include "de/diedavids/cuba/softentityreference/**"
+        include "de/diedavids/cuba/entitysoftreference/**"
         into "$cuba.tomcat.dir/conf/app"
     }
 }
@@ -168,7 +168,7 @@ configure(webModule) {
 
     task deployConf(type: Copy) {
         from file('src')
-        include "de/diedavids/cuba/softentityreference/**"
+        include "de/diedavids/cuba/entitysoftreference/**"
         into "$cuba.tomcat.dir/conf/app"
     }
 

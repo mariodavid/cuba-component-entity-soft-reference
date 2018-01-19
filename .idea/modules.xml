@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/app-core.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/app-core.iml" group="app-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/app-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/app-core_main.iml" group="app-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/app-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/app-core_test.iml" group="app-core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/app-global.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/app-global.iml" group="app-global" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/app-global_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/app-global_main.iml" group="app-global" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/app-global_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/app-global_test.iml" group="app-global" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/app-gui.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/app-gui.iml" group="app-gui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_main.iml" group="app-gui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_test.iml" group="app-gui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/app-web.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/app-web.iml" group="app-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/app-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/app-web_main.iml" group="app-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/app-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/app-web_test.iml" group="app-web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cuba-component-soft-entity-reference.iml" filepath="$PROJECT_DIR$/.idea/modules/cuba-component-soft-entity-reference.iml" />
+    </modules>
+  </component>
+</project>

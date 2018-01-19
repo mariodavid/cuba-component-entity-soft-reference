@@ -9,7 +9,7 @@
         <param-name>appPropertiesConfig</param-name>
         <param-value>
             
-            classpath:de/diedavids/cuba/softentityreference/app.properties
+            classpath:de/diedavids/cuba/entitysoftreference/app.properties
             /WEB-INF/local.app.properties
             "file:${catalina.base}/conf/app-core/local.app.properties"
         </param-value>

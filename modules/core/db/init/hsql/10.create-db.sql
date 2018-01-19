@@ -1,5 +1,5 @@
--- begin DDCSEF_CUSTOMER
-create table DDCSEF_CUSTOMER (
+-- begin DDCESF_CUSTOMER
+create table DDCESF_CUSTOMER (
     ID varchar(36) not null,
     VERSION integer not null,
     CREATE_TS timestamp,
@@ -13,9 +13,9 @@ create table DDCSEF_CUSTOMER (
     --
     primary key (ID)
 )^
--- end DDCSEF_CUSTOMER
--- begin DDCSEF_COMMENT
-create table DDCSEF_COMMENT (
+-- end DDCESF_CUSTOMER
+-- begin DDCESF_COMMENT
+create table DDCESF_COMMENT (
     ID varchar(36) not null,
     VERSION integer not null,
     CREATE_TS timestamp,
@@ -30,9 +30,9 @@ create table DDCSEF_COMMENT (
     --
     primary key (ID)
 )^
--- end DDCSEF_COMMENT
--- begin DDCSEF_ORDER
-create table DDCSEF_ORDER (
+-- end DDCESF_COMMENT
+-- begin DDCESF_ORDER
+create table DDCESF_ORDER (
     ID integer not null,
     UUID varchar(36),
     --
@@ -40,4 +40,4 @@ create table DDCSEF_ORDER (
     --
     primary key (ID)
 )^
--- end DDCSEF_ORDER
+-- end DDCESF_ORDER

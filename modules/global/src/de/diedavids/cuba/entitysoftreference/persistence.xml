@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+             version="2.0">
+    <persistence-unit name="cuba-component-soft-entity-reference"
+                      transaction-type="RESOURCE_LOCAL">
+        <class>de.diedavids.cuba.entitysoftreference.EntitySoftReferenceConverter</class>
+        <class>de.diedavids.cuba.entitysoftreference.example.Customer</class>
+        <class>de.diedavids.cuba.entitysoftreference.example.Comment</class>
+        <class>de.diedavids.cuba.entitysoftreference.example.Order</class>
+    </persistence-unit>
+</persistence>
