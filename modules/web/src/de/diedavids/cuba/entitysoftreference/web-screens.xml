@@ -1,16 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <screen-config xmlns="http://schemas.haulmont.com/cuba/screens.xsd">
     <include file="de/diedavids/cuba/entitysoftreference/screens.xml"/>
-    <screen id="ddcesf$Customer.browse"
-            template="/de/diedavids/cuba/entitysoftreference/web/example/customer/customer-browse.xml"/>
-    <screen id="ddcesf$Customer.edit"
-            template="/de/diedavids/cuba/entitysoftreference/web/example/customer/customer-edit.xml"/>
-    <screen id="ddcesf$Comment.browse"
-            template="/de/diedavids/cuba/entitysoftreference/web/example/comment/comment-browse.xml"/>
-    <screen id="ddcesf$Comment.edit"
-            template="/de/diedavids/cuba/entitysoftreference/web/example/comment/comment-edit.xml"/>
-    <screen id="ddcesf$Order.browse"
-            template="de/diedavids/cuba/entitysoftreference/web/order/order-browse.xml"/>
-    <screen id="ddcesf$Order.edit"
-            template="de/diedavids/cuba/entitysoftreference/web/order/order-edit.xml"/>
 </screen-config>

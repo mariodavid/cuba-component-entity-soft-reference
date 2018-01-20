@@ -2,8 +2,5 @@
 <menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
     <menu id="application-ddcesf"
           insertBefore="administration">
-        <item screen="ddcesf$Customer.browse"/>
-        <item screen="ddcesf$Comment.browse"/>
-        <item screen="ddcesf$Order.browse"/>
     </menu>
 </menu-config>

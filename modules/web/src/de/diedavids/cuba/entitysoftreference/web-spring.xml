@@ -10,8 +10,6 @@
                   ref="cuba_ServerSelector"/>
         <property name="remoteServices">
             <map>
-                <entry key="ddcesf_CommentService"
-                       value="de.diedavids.cuba.entitysoftreference.example.service.CommentsService"/>
                 <entry key="ddcesf_SoftReferenceService"
                        value="de.diedavids.cuba.entitysoftreference.SoftReferenceService"/>
             </map>
