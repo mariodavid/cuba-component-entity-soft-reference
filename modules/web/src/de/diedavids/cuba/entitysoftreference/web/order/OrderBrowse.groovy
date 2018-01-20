@@ -18,7 +18,7 @@ class OrderBrowse extends AbstractLookup {
 
     @Inject
     SoftReferenceService softReferenceService
-    private String COMMENTABLE_COLUMN = 'commentable'
+    private final String COMMENTABLE_COLUMN = 'commentable'
 
     void doCommentsExists() {
 
