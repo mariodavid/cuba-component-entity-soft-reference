@@ -1,3 +1,8 @@
+[ ![Download](https://api.bintray.com/packages/mariodavid/cuba-components/cuba-component-entity-soft-reference/images/download.svg) ](https://bintray.com/mariodavid/cuba-components/cuba-component-entity-soft-reference/_latestVersion)
+[![license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
+[![Build Status](https://travis-ci.org/mariodavid/cuba-component-entity-soft-reference.svg?branch=master)](https://travis-ci.org/mariodavid/cuba-component-entity-soft-reference)
+[![Coverage Status](https://coveralls.io/repos/github/mariodavid/cuba-component-entity-soft-reference/badge.svg)](https://coveralls.io/github/mariodavid/cuba-component-entity-soft-reference)
+
 # CUBA Platform Component - Soft References for Entities
 
 This application component can be used for referencing entities without a foreign key in the database.
