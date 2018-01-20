@@ -13,8 +13,8 @@ class OrderEdit extends AbstractEditor<Order> {
     @Inject
     CommentsService commentsService
 
-    void createComment() {
-        Comment comment = commentsService.createComment("test", getItem())
-        showNotification("Comment " + comment.id + " created...")
+    void addComment() {
+        Comment comment = commentsService.createComment('test', item)
+        showNotification("Comment ${comment.id} created...")
     }
 }

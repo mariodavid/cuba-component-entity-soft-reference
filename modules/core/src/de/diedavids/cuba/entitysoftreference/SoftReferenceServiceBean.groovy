@@ -25,27 +25,20 @@ class SoftReferenceServiceBean implements SoftReferenceService {
 
     @Override
     Collection<Entity> getEntitiesForSoftReference(MetaClass baseEntity, Entity softReference, String attribute) {
-        def result = null
 
-        try {
-            Transaction tx = persistence.createTransaction()
-            EntityManager em = persistence.getEntityManager()
-            Query query = createSoftReferencesExist(em, baseEntity, attribute, softReference)
-            result = query.getResultList()
+        Transaction tx = persistence.createTransaction()
+        EntityManager em = persistence.entityManager
+        Query query = createSoftReferencesExist(em, baseEntity, attribute, softReference)
+        def result = query.resultList
+        tx.commit()
 
-            tx.commit()
-        }
-        catch (Exception e) {
-            e.printStackTrace()
-        }
-
-        return result as Collection<Entity>
+        result as Collection<Entity>
     }
 
     private Query createSoftReferencesExist(EntityManager em, MetaClass metaClassUsingSoftReference, String attribute, Entity softReference) {
-        Query query = em.createQuery(
-                "select e from " + metaClassUsingSoftReference.getName() + " e where e." + attribute + " = :softReference")
-        query.setParameter("softReference", softReference, false)
+        def tableName = metaClassUsingSoftReference.name
+        Query query = em.createQuery("select e from $tableName e where e.$attribute = :softReference")
+        query.setParameter('softReference', softReference, false)
         query
     }
 

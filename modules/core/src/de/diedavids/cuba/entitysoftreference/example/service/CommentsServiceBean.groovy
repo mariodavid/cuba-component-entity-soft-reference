@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service
 import javax.inject.Inject
 
 @Service(CommentsService.NAME)
-public class CommentsServiceBean implements CommentsService {
+class CommentsServiceBean implements CommentsService {
 
 
     @Inject

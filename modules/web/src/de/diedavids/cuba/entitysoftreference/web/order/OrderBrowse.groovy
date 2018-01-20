@@ -16,16 +16,17 @@ class OrderBrowse extends AbstractLookup {
     @Inject
     Metadata metadata
 
-   @Inject
-   SoftReferenceService softReferenceService
+    @Inject
+    SoftReferenceService softReferenceService
+    private String COMMENTABLE_COLUMN = 'commentable'
 
-    void countComments() {
+    void doCommentsExists() {
 
         def selected = ordersTable.singleSelected
 
         def comment = metadata.create(Comment)
 
-        def exists = softReferenceService.doSoftReferencesExist(comment.metaClass, selected, "commentable")
+        def exists = softReferenceService.doSoftReferencesExist(comment.metaClass, selected, COMMENTABLE_COLUMN)
 
         showNotification("exists: $exists")
     }
@@ -36,7 +37,7 @@ class OrderBrowse extends AbstractLookup {
 
         def comment = metadata.create(Comment)
 
-        def result = softReferenceService.getEntitiesForSoftReference(comment.metaClass, selected, "commentable")
+        def result = softReferenceService.getEntitiesForSoftReference(comment.metaClass, selected, COMMENTABLE_COLUMN)
 
         showNotification("result: $result")
     }

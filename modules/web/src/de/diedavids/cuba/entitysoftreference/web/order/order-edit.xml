@@ -18,7 +18,7 @@
         <buttonsPanel>
             <button id="createComment"
                     caption="Create Comment"
-                    invoke="createComment"/>
+                    invoke="addComment"/>
         </buttonsPanel>
         <fieldGroup id="fieldGroup"
                     datasource="orderDs">

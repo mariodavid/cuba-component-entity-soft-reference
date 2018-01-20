@@ -1,12 +1,15 @@
 package de.diedavids.cuba.entitysoftreference.example;
 
-import javax.persistence.*;
-
 import com.haulmont.chile.core.annotations.MetaProperty;
+import com.haulmont.chile.core.annotations.NamePattern;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.SystemLevel;
 import de.diedavids.cuba.entitysoftreference.EntitySoftReferenceConverter;
-import com.haulmont.chile.core.annotations.NamePattern;
+
+import javax.persistence.Column;
+import javax.persistence.Convert;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @NamePattern("%s|text")
 @Table(name = "DDCESF_COMMENT")

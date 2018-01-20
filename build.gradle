@@ -14,29 +14,21 @@ buildscript {
     }
     dependencies {
         classpath "com.haulmont.gradle:cuba-plugin:$cubaVersion"
-
-
-        classpath 'net.saliman:gradle-cobertura-plugin:2.5.0'
-        classpath "org.kt3k.gradle.plugin:coveralls-gradle-plugin:2.8.2"
     }
 }
 
+def modulePrefix = 'entity-soft-reference'
 
-apply plugin: "com.github.kt3k.coveralls"
-
-def globalModule = project(':app-global')
-def coreModule = project(':app-core')
-def guiModule = project(':app-gui')
-def webModule = project(':app-web')
+def globalModule = project(":${modulePrefix}-global")
+def coreModule = project(":${modulePrefix}-core")
+def guiModule = project(":${modulePrefix}-gui")
+def webModule = project(":${modulePrefix}-web")
 
 def servletApi = 'org.apache.tomcat:tomcat-servlet-api:8.0.26'
 
 
 apply(plugin: 'idea')
 apply(plugin: 'cuba')
-
-def bintrayRepositoryUrl = "https://api.bintray.com/maven/mariodavid/cuba-components/cuba-component-entity-soft-reference/;publish=1"
-
 
 cuba {
     artifact {
@@ -47,17 +39,8 @@ cuba {
     tomcat {
         dir = "$project.rootDir/deploy/tomcat"
     }
-    uploadRepository {
-        if (cuba.artifact.isSnapshot) {
-            url = System.properties['uploadRepositorySnapshot'] ?: System.env.UPLOAD_REPOSITORY_SNAPSHOT
-        } else {
-            url = System.properties['uploadRepositoryRelease'] ?: System.env.UPLOAD_REPOSITORY_RELEASE ?: bintrayRepositoryUrl
-        }
-
-        user = System.properties['uploadRepositoryUsername'] ?: System.env.UPLOAD_REPOSITORY_USERNAME
-        password = System.properties['uploadRepositoryPassword'] ?:System.env.UPLOAD_REPOSITORY_PASSWORD
-    }
     ide {
+         
         vcs = 'Git'
     }
 }
@@ -69,39 +52,6 @@ dependencies {
 
 def hsql = 'org.hsqldb:hsqldb:2.2.9'
 
-
-allprojects {
-    apply plugin: 'net.saliman.cobertura'
-}
-
-
-def files = subprojects
-        .findAll{ !it.name.toLowerCase().contains('theme') }
-        .collect { new File(it.projectDir, '/build/cobertura/cobertura.ser')}
-def sourceDirs = subprojects
-        .findAll{ !it.name.toLowerCase().contains('theme') }
-        .collect { new File(it.projectDir, '/src')}
-
-cobertura {
-    coverageFormats = ['html', 'xml']
-    coverageMergeDatafiles = files
-    coverageCheckTotalBranchRate = 0
-    coverageCheckTotalLineRate = 0
-    coverageCheckHaltOnFailure = true
-    coverageSourceDirs = sourceDirs
-//    coverageCheckLineRate = 1
-    coverageCheckRegexes = [[regex: '.*\\$.*', branchRate: 0, lineRate: 0]]
-
-}
-
-
-test.dependsOn(subprojects.collect{ ":${it.name}:test"} )
-test.finalizedBy(project.tasks.cobertura)
-test.finalizedBy(project.tasks.coberturaCheck)
-
-
-
-
 configure([globalModule, coreModule, guiModule, webModule]) {
     apply(plugin: 'java')
     apply(plugin: 'maven')
@@ -110,11 +60,6 @@ configure([globalModule, coreModule, guiModule, webModule]) {
 
     dependencies {
         testCompile('junit:junit:4.12')
-
-
-        testCompile('org.spockframework:spock-core:1.0-groovy-2.4')
-        testCompile('org.springframework:spring-test:4.3.1.RELEASE')
-        testRuntime "cglib:cglib-nodep:3.2.4"
     }
 
     task sourceJar(type: Jar) {
@@ -129,40 +74,6 @@ configure([globalModule, coreModule, guiModule, webModule]) {
 
 configure([globalModule, coreModule, guiModule, webModule]) {
     apply(plugin: 'groovy')
-    apply plugin: 'net.saliman.cobertura'
-    apply plugin: 'codenarc'
-
-
-    codenarc {
-        toolVersion = "0.24"
-        ignoreFailures = false
-        reportFormat = 'html'
-        reportsDir = new File("./build/reports/codenarc")
-    }
-
-    codenarcMain {
-        configFile = rootProject.file("config/codenarc/rulesMain.groovy")
-    }
-    codenarcTest {
-        configFile = rootProject.file("config/codenarc/rulesTests.groovy")
-    }
-
-
-    cobertura {
-        coverageFormats = ['html', 'xml']
-        coverageIgnoreTrivial = true
-        coverageIgnores = ['org.slf4j.Logger.*']
-        coverageReportDir = new File("$buildDir/reports/cobertura")
-
-        coverageExcludes = [
-                '.*Generator',
-                '.*Enum',
-                '.*Hilfe.*' // Hilfe wird vorerst deaktiviert, da die Hilfe noch einem großen Refactoring unterliegt und dies bisher nur ein Proof of Concept ist
-        ]
-    }
-
-    test.finalizedBy(project.tasks.cobertura)
-    test.finalizedBy(project.tasks.coberturaCheck)
 
     sourceSets {
         main { groovy { srcDirs = ["src"] } }
@@ -172,6 +83,13 @@ configure([globalModule, coreModule, guiModule, webModule]) {
 
 configure(globalModule) {
     task enhance(type: CubaEnhancing)
+
+    jar {
+        manifest {
+            attributes('App-Component-Id': cuba.artifact.group)
+            attributes('App-Component-Version': cuba.artifact.version + (cuba.artifact.isSnapshot ? '-SNAPSHOT' : ''))
+        }
+    }
 
     
 }
@@ -193,7 +111,7 @@ configure(coreModule) {
 
     task cleanConf(description: 'Cleans up conf directory') {
         doLast {
-            def dir = new File(cuba.tomcat.dir, '/conf/app-core')
+            def dir = new File(cuba.tomcat.dir, "/conf/${modulePrefix}-core")
             if (dir.isDirectory()) {
                 ant.delete(includeemptydirs: true) {
                     fileset(dir: dir, includes: '**/*', excludes: 'local.app.properties')
@@ -203,8 +121,8 @@ configure(coreModule) {
     }
 
     task deploy(dependsOn: [assemble, cleanConf], type: CubaDeployment) {
-        appName = 'app-core'
-        appJars('app-global', 'app-core')
+        appName = "${modulePrefix}-core"
+        appJars(modulePrefix + '-global', modulePrefix + '-core')
     }
 
     task createDb(dependsOn: assembleDbScripts, description: 'Creates local database', type: CubaDbCreation) {
@@ -233,7 +151,7 @@ configure(guiModule) {
     task deployConf(type: Copy) {
         from file('src')
         include "de/diedavids/cuba/entitysoftreference/**"
-        into "$cuba.tomcat.dir/conf/app"
+        into "$cuba.tomcat.dir/conf/${modulePrefix}"
     }
 }
 
@@ -261,17 +179,17 @@ configure(webModule) {
     task deployConf(type: Copy) {
         from file('src')
         include "de/diedavids/cuba/entitysoftreference/**"
-        into "$cuba.tomcat.dir/conf/app"
+        into "$cuba.tomcat.dir/conf/${modulePrefix}"
     }
 
     task clearMessagesCache(type: CubaClearMessagesCache) {
-        appName = 'app'
+        appName = "${modulePrefix}"
     }
     deployConf.dependsOn clearMessagesCache
 
     task cleanConf(description: 'Cleans up conf directory') {
         doLast {
-            def dir = new File(cuba.tomcat.dir, '/conf/app')
+            def dir = new File(cuba.tomcat.dir, "/conf/${modulePrefix}")
             if (dir.isDirectory()) {
                 ant.delete(includeemptydirs: true) {
                     fileset(dir: dir, includes: '**/*', excludes: 'local.app.properties')
@@ -281,8 +199,8 @@ configure(webModule) {
     }
 
     task deploy(dependsOn: [assemble, cleanConf], type: CubaDeployment) {
-        appName = 'app'
-        appJars('app-global', 'app-gui', 'app-web')
+        appName = "${modulePrefix}"
+        appJars(modulePrefix + '-global', modulePrefix + '-gui', modulePrefix + '-web')
     }
 }
 
@@ -290,13 +208,13 @@ configure(webModule) {
 
 
 
-task undeploy(type: Delete, dependsOn: ':app-web:cleanConf') {
+task undeploy(type: Delete, dependsOn: ":${modulePrefix}-web:cleanConf") {
     delete("$cuba.tomcat.dir/shared")
-    delete("$cuba.tomcat.dir/webapps/app-core")
-    delete("$cuba.tomcat.dir/webapps/app")
+    delete("$cuba.tomcat.dir/webapps/${modulePrefix}-core")
+    delete("$cuba.tomcat.dir/webapps/${modulePrefix}")
 }
 
-task restart(dependsOn: ['stop', ':app-core:deploy', ':app-web:deploy'], description: 'Redeploys applications and restarts local Tomcat') {
+task restart(dependsOn: ['stop', ":${modulePrefix}-core:deploy", ":${modulePrefix}-web:deploy"], description: 'Redeploys applications and restarts local Tomcat') {
     doLast {
         ant.waitfor(maxwait: 6, maxwaitunit: 'second', checkevery: 2, checkeveryunit: 'second') {
             not {
@@ -312,7 +230,3 @@ task wrapper(type: Wrapper) {
 }
 
 apply from: 'extra.gradle'
-
-clean {
-    delete = ['build/libs', 'build/tmp']
-}

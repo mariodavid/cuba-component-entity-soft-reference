@@ -29,7 +29,7 @@
                 <action id="create"/>
                 <action id="edit"/>
                 <action id="remove"/>
-                <action id="countComments" caption="Count comments" invoke="countComments"/>
+                <action id="countComments" caption="Count comments" invoke="doCommentsExists"/>
                 <action id="showComments" caption="Show comments" invoke="showComments"/>
             </actions>
             <columns>
