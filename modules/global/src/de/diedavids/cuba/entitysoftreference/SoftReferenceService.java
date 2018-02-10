@@ -9,7 +9,10 @@ import java.util.Collection;
 public interface SoftReferenceService {
     String NAME = "ddcesf_SoftReferenceService";
 
-    boolean doSoftReferencesExist(MetaClass baseEntity, Entity softReference, String attribute);
+    boolean doSoftReferencesExist(Class<Entity> polymorphicEntityClass, Entity softReference, String attribute);
 
-    Collection<Entity> getEntitiesForSoftReference(MetaClass baseEntity, Entity softReference, String attribute);
+    Collection<Entity> loadEntitiesForSoftReference(Class<Entity> polymorphicEntityClass, Entity softReference, String attribute);
+    Collection<Entity> loadEntitiesForSoftReference(Class<Entity> polymorphicEntityClass, Entity softReference, String attribute, String view);
+
+    int countEntitiesForSoftReference(Class<Entity> polymorphicEntityClass, Entity softReference, String attribute);
 }
