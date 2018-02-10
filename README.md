@@ -74,7 +74,7 @@ For cross cutting functionality, these soft references can be the solution here.
 
 | Platform Version | Add-on Version |
 | ---------------- | -------------- |
-| 6.8.x            | 0.1.x          |
+| 6.8.x            | 0.1.x - 0.2.x  |
 
 
 The latest version is: [ ![Download](https://api.bintray.com/packages/mariodavid/cuba-components/cuba-component-entity-soft-reference/images/download.svg) ](https://bintray.com/mariodavid/cuba-components/cuba-component-entity-soft-reference/_latestVersion)
