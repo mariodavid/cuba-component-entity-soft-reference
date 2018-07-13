@@ -2,54 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e21428ec-fc60-43f7-a57f-493b6d6cd060" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/softentityreference/SoftReferenceServiceBean.groovy" afterPath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitysoftreference/SoftReferenceServiceBean.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/softentityreference/app.properties" afterPath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitysoftreference/app.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/softentityreference/core/messages.properties" afterPath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitysoftreference/core/messages.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/softentityreference/example/service/CommentsServiceBean.groovy" afterPath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitysoftreference/example/service/CommentsServiceBean.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/softentityreference/spring.xml" afterPath="$PROJECT_DIR$/modules/core/src/de/diedavids/cuba/entitysoftreference/spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/core/test/de/diedavids/cuba/softentityreference/DdcsefTestContainer.java" afterPath="$PROJECT_DIR$/modules/core/test/de/diedavids/cuba/entitysoftreference/DdcsefTestContainer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/core/test/de/diedavids/cuba/softentityreference/core/SampleIntegrationTest.java" afterPath="$PROJECT_DIR$/modules/core/test/de/diedavids/cuba/entitysoftreference/core/SampleIntegrationTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/EntitySoftReferenceConverter.java" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/EntitySoftReferenceConverter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/EntitySoftReferenceDatatype.java" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/EntitySoftReferenceDatatype.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/SoftReferenceService.java" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/SoftReferenceService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/example/Comment.java" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/example/Comment.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/example/Customer.java" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/example/Customer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/example/Order.java" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/example/Order.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/example/messages.properties" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/example/messages.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/example/service/CommentsService.groovy" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/example/service/CommentsService.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/metadata.xml" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/metadata.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/persistence.xml" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/persistence.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/softentityreference/views.xml" afterPath="$PROJECT_DIR$/modules/global/src/de/diedavids/cuba/entitysoftreference/views.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/gui/src/de/diedavids/cuba/softentityreference/screens.xml" afterPath="$PROJECT_DIR$/modules/gui/src/de/diedavids/cuba/entitysoftreference/screens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web-app.properties" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web-app.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web-dispatcher-spring.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web-dispatcher-spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web-menu.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web-menu.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web-permissions.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web-permissions.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web-screens.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web-screens.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web-spring.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web-spring.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/SoftReferenceComponentFactory.java" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/SoftReferenceComponentFactory.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/comment/CommentBrowse.groovy" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/comment/CommentBrowse.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/comment/CommentEdit.groovy" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/comment/CommentEdit.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/comment/comment-browse.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/comment/comment-browse.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/comment/comment-edit.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/comment/comment-edit.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/comment/messages.properties" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/comment/messages.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/customer/CustomerBrowse.groovy" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/customer/CustomerBrowse.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/customer/CustomerEdit.groovy" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/customer/CustomerEdit.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/customer/customer-browse.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/customer/customer-browse.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/customer/customer-edit.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/customer/customer-edit.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/example/customer/messages.properties" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/example/customer/messages.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/messages.properties" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/messages.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/order/OrderBrowse.groovy" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/order/OrderBrowse.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/order/OrderEdit.groovy" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/order/OrderEdit.groovy" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/order/messages.properties" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/order/messages.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/order/order-browse.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/order/order-browse.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/softentityreference/web/order/order-edit.xml" afterPath="$PROJECT_DIR$/modules/web/src/de/diedavids/cuba/entitysoftreference/web/order/order-edit.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/core/db/init/hsql/10.create-db.sql" afterPath="$PROJECT_DIR$/modules/core/db/init/hsql/10.create-db.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/core/web/META-INF/context.xml" afterPath="$PROJECT_DIR$/modules/core/web/META-INF/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/core/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/modules/core/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/modules/web/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -78,13 +32,26 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1860">
+                <caret line="124" column="37" lean-forward="false" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -142,6 +109,7 @@
       <replace>entitysoftreference</replace>
       <replace>DDCESF</replace>
       <replace>ddcesf</replace>
+      <replace>`</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -1532,6 +1500,7 @@
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/modules/core/db/init/hsql/10.create-db.sql" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1541,11 +1510,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1920" />
-    <option name="y" value="-157" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1690" />
+    <option name="y" value="-37" />
+    <option name="width" value="1280" />
+    <option name="height" value="777" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -1581,7 +1550,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1599,6 +1567,51 @@
               <item name="cuba-component-entity-soft-reference" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="global" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="cuba-component-entity-soft-reference" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cuba-component-entity-soft-reference" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="cuba-component-entity-soft-reference" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cuba-component-entity-soft-reference" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cuba-component-entity-soft-reference" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cuba-component-entity-soft-reference" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="diedavids" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cuba-component-entity-soft-reference" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cuba-component-entity-soft-reference" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="diedavids" type="462c0819:PsiDirectoryNode" />
+              <item name="cuba" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cuba-component-entity-soft-reference" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cuba-component-entity-soft-reference" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="de" type="462c0819:PsiDirectoryNode" />
+              <item name="diedavids" type="462c0819:PsiDirectoryNode" />
+              <item name="cuba" type="462c0819:PsiDirectoryNode" />
+              <item name="entitysoftreference" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cuba-component-entity-soft-reference" type="b2602c69:ProjectViewProjectNode" />
@@ -1655,6 +1668,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1750,47 +1764,59 @@
       <option name="presentableId" value="Default" />
       <updated>1516364720490</updated>
       <workItem from="1516364724604" duration="356000" />
+      <workItem from="1516873108053" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356000" />
+    <option name="totallyTimeSpent" value="2614000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="-157" width="1920" height="1057" extended-state="6" />
+    <frame x="-1690" y="-37" width="1280" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46889225" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21831736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33441034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1800,6 +1826,46 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studio-settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/core/db/init/hsql/10.create-db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/extra.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1834,9 +1900,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="78" column="1" lean-forward="false" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+        <state relative-caret-position="279">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extra.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="48" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/studio-settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/core/db/init/hsql/10.create-db.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1860">
+            <caret line="124" column="37" lean-forward="false" selection-start-line="124" selection-start-column="37" selection-end-line="124" selection-end-column="37" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
