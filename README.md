@@ -51,29 +51,12 @@ For cross cutting functionality, these soft references can be the solution here.
 
 ## Installation
 
-1. Add the following maven repository `https://dl.bintray.com/mariodavid/cuba-components` to the build.gradle of your CUBA application:
-
-
-    buildscript {
-        
-        //...
-        
-        repositories {
-        
-            // ...
-        
-            maven {
-                url  "https://dl.bintray.com/mariodavid/cuba-components"
-            }
-        }
-        
-        // ...
-    }
-
+1. `entity-soft-reference` is available in the [CUBA marketplace](https://www.cuba-platform.com/marketplace)
 2. Select a version of the add-on which is compatible with the platform version used in your project:
 
 | Platform Version | Add-on Version |
 | ---------------- | -------------- |
+| 6.9.x            | 0.3.x          |
 | 6.8.x            | 0.1.x - 0.2.x  |
 
 
