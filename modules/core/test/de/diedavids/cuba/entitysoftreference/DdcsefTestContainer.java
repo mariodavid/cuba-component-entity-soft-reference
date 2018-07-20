@@ -29,7 +29,9 @@ public class DdcsefTestContainer extends TestContainer {
                 // Add this file which is located in CUBA and defines some properties
                 // specifically for test environment. You can replace it with your own
                 // or add another one in the end.
-                "test-app.properties");
+                "test-app.properties",
+                "entitysoftreference-test-app.properties"
+                );
         initDbProperties();
     }
 

@@ -138,6 +138,8 @@ configure([globalModule, coreModule, guiModule, webModule]) {
     dependencies {
         testCompile('junit:junit:4.12')
 
+        testCompile 'org.assertj:assertj-core:2.9.0'
+
 
         testCompile('org.spockframework:spock-core:1.0-groovy-2.4')
         testCompile('org.springframework:spring-test:4.3.1.RELEASE')
@@ -212,6 +214,8 @@ configure(globalModule) {
 
 configure(coreModule) {
 
+    task enhanceTestModel(type: CubaTestEnhancing)
+
     configurations {
         jdbc
         dbscripts
@@ -241,21 +245,53 @@ configure(coreModule) {
         appJars(modulePrefix + '-global', modulePrefix + '-core')
     }
 
+
+    def hsqlPort = 9001
+
+    task startDb(description: 'Starts local HSQLDB server', type: CubaHsqlStart) {
+        dbPort = hsqlPort
+        dbName = 'ddcesf'
+    }
+
+    task stopDb(description: 'Stops local HSQLDB server', type: CubaHsqlStop) {
+        dbPort = hsqlPort
+        dbName = 'ddcesf'
+    }
+
+    task removeDb(description: 'Removes local HSQL database', type: Delete) {
+        delete new File("$rootProject.projectDir/data")
+    }
+
+    task killDb(description: "Kill local HSQLDB server process running on port $hsqlPort", type: CubaKillProcess) {
+        port = hsqlPort
+    }
+
     task createDb(dependsOn: assembleDbScripts, description: 'Creates local database', type: CubaDbCreation) {
+        dbName = 'ddcesf'
         dbms = 'hsql'
         host = 'localhost'
-        dbName = 'ddcesf'
         dbUser = 'sa'
         dbPassword = ''
     }
 
     task updateDb(dependsOn: assembleDbScripts, description: 'Updates local database', type: CubaDbUpdate) {
+        dbName = 'ddcesf'
         dbms = 'hsql'
         host = 'localhost'
-        dbName = 'ddcesf'
         dbUser = 'sa'
         dbPassword = ''
     }
+
+
+    task createTestDb(dependsOn: assembleDbScripts, description: 'Creates local HSQL database', type: CubaDbCreation) {
+        dbms = 'hsql'
+        host = "localhost:$hsqlPort"
+        dbName = 'ddcesf'
+        dbUser = 'sa'
+        dbPassword = ''
+        auxiliaryScript = file('test/de/diedavids/cuba/entitysoftreference/create-db.sql')
+    }
+
 }
 
 configure(guiModule) {

@@ -1,0 +1,1 @@
+alter table DDCESF_CUSTOMER rename to DDCESF_CUSTOMER__U86150 ;

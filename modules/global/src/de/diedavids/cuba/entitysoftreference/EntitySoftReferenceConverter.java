@@ -35,7 +35,11 @@ public class EntitySoftReferenceConverter implements AttributeConverter<Entity, 
         EntityLoadInfoBuilder builder = getEntityLoadInfoBuilder();
         EntityLoadInfo entityLoadInfo = builder.parse(value);
 
-        Entity entity = loadEntity(entityLoadInfo);
+        Entity entity = null;
+
+        if (entityLoadInfo != null) {
+            entity = loadEntity(entityLoadInfo);
+        }
 
         return entity;
     }
