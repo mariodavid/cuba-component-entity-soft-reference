@@ -9,7 +9,7 @@ script:
 - "./run-check.sh"
 deploy:
 - provider: script
-  script: "./upload-to-repository.sh"
+  script: "./gradlew clean assemble bintrayUpload"
   on:
     all_branches: true
     condition: "$TRAVIS_TAG =~ ^[0-9]+\\.[0-9]+\\.[0-9]+"
