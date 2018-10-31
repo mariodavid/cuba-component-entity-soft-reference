@@ -1,6 +1,6 @@
 
 buildscript {
-    ext.cubaVersion = '6.9.3'
+    ext.cubaVersion = '6.10.2'
     repositories {
         
         maven {
@@ -43,7 +43,7 @@ apply(plugin: 'cuba')
 cuba {
     artifact {
         group = 'de.diedavids.cuba.entitysoftreference'
-        version = "0.3.2"
+        version = "0.4.0"
         isSnapshot = false
     }
     tomcat {
@@ -200,7 +200,13 @@ configure([globalModule, coreModule, guiModule, webModule]) {
 }
 
 configure(globalModule) {
-    task enhance(type: CubaEnhancing)
+    entitiesEnhancing {
+        main { enabled = true }
+        test {
+            enabled = true
+            persistenceConfig = 'entitysoftreference-test-persistence.xml'
+        }
+    }
 
     jar {
         manifest {
@@ -214,7 +220,13 @@ configure(globalModule) {
 
 configure(coreModule) {
 
-    task enhanceTestModel(type: CubaTestEnhancing)
+    entitiesEnhancing {
+        main { enabled = true }
+        test {
+            enabled = true
+            persistenceConfig = 'entitysoftreference-test-persistence.xml'
+        }
+    }
 
     configurations {
         jdbc
