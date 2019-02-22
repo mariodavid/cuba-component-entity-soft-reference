@@ -5,6 +5,7 @@
             name="global">
         <artifact appJar="true"
                   name="entity-soft-reference-global"/>
+        <artifact name="entity-soft-reference-core" classifier="db" ext="zip" configuration="dbscripts"/>
         <property name="cuba.persistenceConfig"
                   value="+de/diedavids/cuba/entitysoftreference/persistence.xml"/>
         <property name="cuba.metadataConfig"

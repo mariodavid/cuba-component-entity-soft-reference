@@ -8,11 +8,10 @@ cache:
 script:
 - "./run-check.sh"
 deploy:
-- provider: script
-  script: "./gradlew clean assemble bintrayUpload"
+  provider: script
+  script: "./gradlew clean assemble bintrayUpload --debug"
   on:
-    all_branches: true
-    condition: "$TRAVIS_TAG =~ ^[0-9]+\\.[0-9]+\\.[0-9]+"
+    tags: true
 env:
   global:
   - secure: AScuaYk5QAC/GIH9yjG8CpCQn5jYtlmHTMBG9X7gTopBjzlYi7jCTv+0K/4LEYz3R50FidGcDdnteQ52uc0d8yG2+kdrKcRDwY18eDEDm/I4tfy2941nCKIWrGIkEFVGdpfTaT09nYouj/GYm7NSKTah4kFj5QC9HlS8zzbRwicfdwd7up0ZlFKtv0F3gSqvsbJiqPijNhrdsEN6dSxa2b/SRO2d4QX+A4Lf9PUyvjJ3HDx5G6hM8snUfOP5VUYlg0bVay1CMgZFDfMEZ/Soshubx9Vdn86XbMGXCCJ899J/lONNs9/2oAWPIcHaMGx7HLyqlhrTkHhuLAsqsKpnF/+bPWw4Rb4P0h3z8yHPbWWDXmC5J+ZT0FJLGrBej36zubT8LsHj7qEbj4iyoS68m3DK2oR468m4+wRgPfiRGLKxKvNzdTqPW16Fv6glt8rImNY7ughpN3TKLo1sF7Zuob5uUHPCjnf0g5koqFEc2HYCN9wns08UuoEmcvyy34jrppFPygrIXQx70qNZvf5JDidX1mHPkhrmuycEgGyrZY+W7FX/3xtDEfkMeBt/Zht5io3cYs0vcq1beIBw7Yp6Z384U52OmMRh2LLWSuEGD5ZL3N6kBF7TDMlLfIVT71Q08rCVm9w/PQU97G4hfmgrVIPkxdqVHuNV3Y+73Gg1Aqk=

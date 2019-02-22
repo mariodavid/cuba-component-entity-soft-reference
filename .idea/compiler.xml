@@ -2,14 +2,16 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="app-core_main" target="1.8" />
-      <module name="app-core_test" target="1.8" />
-      <module name="app-global_main" target="1.8" />
-      <module name="app-global_test" target="1.8" />
-      <module name="app-gui_main" target="1.8" />
-      <module name="app-gui_test" target="1.8" />
-      <module name="app-web_main" target="1.8" />
-      <module name="app-web_test" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.main" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.test" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.main" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.test" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.main" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.test" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.main" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.test" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.main" target="1.8" />
+      <module name="de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

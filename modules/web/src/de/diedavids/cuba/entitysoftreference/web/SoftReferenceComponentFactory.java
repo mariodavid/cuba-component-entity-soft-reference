@@ -3,12 +3,15 @@ package de.diedavids.cuba.entitysoftreference.web;
 import com.haulmont.chile.core.model.MetaClass;
 import com.haulmont.chile.core.model.MetaPropertyPath;
 import com.haulmont.chile.core.model.Range;
+import com.haulmont.cuba.core.app.dynamicattributes.DynamicAttributesTools;
 import com.haulmont.cuba.core.app.dynamicattributes.DynamicAttributesUtils;
 import com.haulmont.cuba.core.entity.Entity;
 import com.haulmont.cuba.core.global.Messages;
+import com.haulmont.cuba.gui.UiComponents;
 import com.haulmont.cuba.gui.components.*;
+import com.haulmont.cuba.gui.components.factories.AbstractComponentGenerationStrategy;
 import com.haulmont.cuba.gui.xml.layout.ComponentsFactory;
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.annotation.Order;
 
 import javax.annotation.Nullable;
@@ -22,13 +25,13 @@ public class SoftReferenceComponentFactory extends AbstractComponentGenerationSt
     public static final String NAME = "ddcser_SoftReferenceComponentFactory";
 
     @Inject
-    public SoftReferenceComponentFactory(Messages messages) {
-        super(messages);
+    public SoftReferenceComponentFactory(Messages messages, DynamicAttributesTools dynamicAttributesUtils) {
+        super(messages, dynamicAttributesUtils);
     }
 
     @Inject
-    public void setComponentsFactory(ComponentsFactory componentsFactory) {
-        this.componentsFactory = componentsFactory;
+    public void setUiComponents(UiComponents uiComponents) {
+        this.uiComponents = uiComponents;
     }
 
 

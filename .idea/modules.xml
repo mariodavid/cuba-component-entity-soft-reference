@@ -2,19 +2,21 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/app-core.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/app-core.iml" group="app-core" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/app-core_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/app-core_main.iml" group="app-core" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/app-core_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/app-core_test.iml" group="app-core" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/app-global.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/app-global.iml" group="app-global" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/app-global_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/app-global_main.iml" group="app-global" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/app-global_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/app-global_test.iml" group="app-global" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/app-gui.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/app-gui.iml" group="app-gui" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_main.iml" group="app-gui" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/app-gui_test.iml" group="app-gui" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/app-web.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/app-web.iml" group="app-web" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/app-web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/app-web_main.iml" group="app-web" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/app-web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/app-web_test.iml" group="app-web" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cuba-component-soft-entity-reference.iml" filepath="$PROJECT_DIR$/.idea/modules/cuba-component-soft-entity-reference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.iml" filepath="$PROJECT_DIR$/.idea/modules/de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.main.iml" filepath="$PROJECT_DIR$/.idea/modules/de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.test.iml" filepath="$PROJECT_DIR$/.idea/modules/de.diedavids.cuba.entitysoftreference.cuba-component-entity-soft-reference.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/core/de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/core/de.diedavids.cuba.entitysoftreference.entity-soft-reference-core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/global/de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/global/de.diedavids.cuba.entitysoftreference.entity-soft-reference-global.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/gui/de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/gui/de.diedavids.cuba.entitysoftreference.entity-soft-reference-gui.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/modules/web/de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/modules/web/de.diedavids.cuba.entitysoftreference.entity-soft-reference-web.test.iml" />
     </modules>
   </component>
 </project>
