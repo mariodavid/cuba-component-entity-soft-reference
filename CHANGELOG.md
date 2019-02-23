@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.5.0] - 2019-02-23
 
+## Added
+- `SoftReferenceFormFieldGenerator` to render a soft reference into a CUBA 7 form component
+- `SoftReferenceInstanceNameTableColumnGenerator` to render a soft reference with an instance name as a link into a table component
+
 ## Changed
 - fixed entity import / export of entities containing a soft reference via entity inspector. The soft reference in the EntityLoadInfo output format is used.
 - `EntitySoftReferenceDatatype` uses EntityLoadInfo output format: `example$Customer-2fdc4906-fa89-11e7-8c3f-9a214cf093ae`
