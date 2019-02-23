@@ -164,7 +164,7 @@ configure([globalModule, coreModule, guiModule, webModule]) {
         toolVersion = "0.24"
         ignoreFailures = false
         reportFormat = 'html'
-        reportsDir = new File("./build/reports/codenarc")
+        reportsDir = new File(System.getenv("GITHUB_WORKSPACE") + "/build/reports/codenarc")
     }
 
     codenarcMain {
