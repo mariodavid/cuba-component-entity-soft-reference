@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2019-02-23
+
+## Changed
+- fixed entity import / export of entities containing a soft reference via entity inspector. The soft reference in the EntityLoadInfo output format is used.
+- `EntitySoftReferenceDatatype` uses EntityLoadInfo output format: `example$Customer-2fdc4906-fa89-11e7-8c3f-9a214cf093ae`
+
+### Dependencies
+- CUBA 7
+
 ## [0.4.0] - 2018-10-31
 
 ### Dependencies
