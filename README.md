@@ -68,3 +68,7 @@ Add custom application component to your project:
 * Artifact group: `de.diedavids.cuba.entitysoftreference`
 * Artifact name: `entity-soft-reference-global`
 * Version: *add-on version*
+
+## Example usage
+
+To see this application component in action, check out this example: [cuba-example-using-taggable](https://github.com/mariodavid/cuba-example-using-entity-soft-reference).
