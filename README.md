@@ -56,6 +56,7 @@ For cross cutting functionality, these soft references can be the solution here.
 
 | Platform Version | Add-on Version |
 | ---------------- | -------------- |
+| 7.0.x            | 0.5.x          |
 | 6.10.x           | 0.4.x          |
 | 6.9.x            | 0.3.x          |
 | 6.8.x            | 0.1.x - 0.2.x  |
@@ -72,3 +73,46 @@ Add custom application component to your project:
 ## Example usage
 
 To see this application component in action, check out this example: [cuba-example-using-taggable](https://github.com/mariodavid/cuba-example-using-entity-soft-reference).
+
+## Usage
+
+### Soft references as Table columns
+
+In order to use a soft reference as a Table column, there is a class `de.diedavids.cuba.entitysoftreference.web.SoftReferenceInstanceNameTableColumnGenerator` which can be used
+to create a column which renders the soft reference as a link with the instance name into the table.
+
+Usage:
+
+
+```
+@Subscribe
+protected void onInit(InitEvent event) {
+    myTable.addGeneratedColumn("softReferenceColumnId",
+        new SoftReferenceInstanceNameTableColumnGenerator(
+            "softReferenceColumnName",
+            uiComponents,
+            metadataTools,
+            screenBuilders,
+            this
+        )
+    );
+}
+```
+
+### Soft references as Form fields
+
+With CUBA 7 the form components is the new standard way of rendering forms. In order to render a soft reference into a form,
+there is a Spring bean `de.diedavids.cuba.entitysoftreference.web.SoftReferenceFormFieldGenerator` which can be utilized.
+
+Usage (in an editor screen):
+
+```
+@Inject
+private SoftReferenceFormFieldGenerator softReferenceFormFieldGenerator;
+
+@Subscribe
+protected void onInit(InitEvent event) {
+    softReferenceFormFieldGenerator.initSoftReferenceFormField(form, myFormInstanceContainer, "mySoftReferenceProperty");
+}
+```
+
