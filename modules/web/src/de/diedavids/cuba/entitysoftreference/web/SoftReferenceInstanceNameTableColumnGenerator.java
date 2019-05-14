@@ -64,7 +64,13 @@ public class SoftReferenceInstanceNameTableColumnGenerator implements Table.Colu
     }
 
     private LinkButton softReferenceLinkButton(Entity entitySoftReference) {
+
+        if (entitySoftReference == null) {
+            return null;
+        }
+
         LinkButton linkButton = uiComponents.create(LinkButton.class);
+
         linkButton.setCaption(metadataTools.getInstanceName(entitySoftReference));
 
         linkButton.addClickListener(clickEvent -> {
