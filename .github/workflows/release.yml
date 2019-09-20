@@ -1,0 +1,15 @@
+on: release
+name: Release
+jobs:
+  executeGradleTask:
+    name: Execute Gradle task
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Execute Gradle task
+      uses: MrRamych/gradle-actions@1.0
+      env:
+        BINTRAY_USERNAME: ${{ secrets.BINTRAY_USERNAME }}
+        BINTRAY_PASSWORD: ${{ secrets.BINTRAY_PASSWORD }}
+      with:
+        args: clean assemble bintrayUpload --debug
