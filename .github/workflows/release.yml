@@ -12,4 +12,4 @@ jobs:
         BINTRAY_USERNAME: ${{ secrets.BINTRAY_USERNAME }}
         BINTRAY_PASSWORD: ${{ secrets.BINTRAY_PASSWORD }}
       with:
-        args: clean assemble bintrayUpload --debug
+        args: clean assemble bintrayUpload
