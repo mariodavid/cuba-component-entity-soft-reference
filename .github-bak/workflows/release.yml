@@ -7,7 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Execute Gradle task
-      uses: MrRamych/gradle-actions@1.0
+      uses: MrRamych/gradle-actions@3.0
       env:
         BINTRAY_USERNAME: ${{ secrets.BINTRAY_USERNAME }}
         BINTRAY_PASSWORD: ${{ secrets.BINTRAY_PASSWORD }}
