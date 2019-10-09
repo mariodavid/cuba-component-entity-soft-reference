@@ -51,7 +51,7 @@ For cross cutting functionality, these soft references can be the solution here.
 
 ## Installation
 
-1. `entity-soft-reference` is available in the [CUBA marketplace](https://www.cuba-platform.com/marketplace/soft-references-entities)
+1. `entity-soft-reference` is available in the [CUBA marketplace](https://www.cuba-platform.com/marketplace/soft-references-for-entities/)
 2. Select a version of the add-on which is compatible with the platform version used in your project:
 
 | Platform Version | Add-on Version |
