@@ -73,7 +73,7 @@ Add custom application component to your project:
 
 ## Example usage
 
-To see this application component in action, check out this example: [cuba-example-using-taggable](https://github.com/mariodavid/cuba-example-using-entity-soft-reference).
+To see this application component in action, check out this example: [cuba-example-using-entity-soft-reference](https://github.com/mariodavid/cuba-example-using-entity-soft-reference).
 
 ## Usage
 
